@@ -8,6 +8,10 @@ npm install bootstrap@4.0.0-alpha.6 -save
 npm install jquery-slim -save
 npm install tether -save
 
+## Guias de Referencias ##
+http://caniuse.com/
+http://todomvc.com/
+
 
 ## Development server
 
