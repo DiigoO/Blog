@@ -3,10 +3,13 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.1.
 
 npm install -g @angular/cli
-ng serve -watch
 npm install bootstrap@4.0.0-alpha.6 -save
 npm install jquery-slim -save
 npm install tether -save
+
+##comandos##
+ng build --aot
+ng serve -watch
 
 ## Guias de Referencias ##
 http://caniuse.com/
