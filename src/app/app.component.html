@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-4" id="menu">
+    <div class="col-md-4 sidebar" id="menu">
       <header>
         <div id="menu-titulo">
           <h1>Code Maki</h1>
@@ -22,27 +22,36 @@
         </nav>
       </header>
   </div>
-  <div class="col-md-8" id="conteudo">
-    <article id="sobre-mim">
-      <h1>Sobre mim</h1>
-      <div>I’m Digo, a 23 year old back-end developer from Brazil, BR. I run Ultimate Angular (which just won “Best Angular product for Education” award!)
+  <div class="col-md-8 offset-md-4" id="conteudo">
+    <article id="sobre-mim" class="row">
+      <div class="col-md-6">
+        <h1>Sobre mim</h1>
+        <div>I’m Digo, a 23 year old back-end developer from Brazil, BR. I run Ultimate Angular (which just won “Best Angular product for Education” award!)</div>
       </div>
     </article>
-    <section id="artigos">
-      <article class="card artigo">
-        <div class="card-block">
-          <h1>Google blocker to eliminate bad ads and let users go ad-free</h1>
-          <div>OK GOOGLE, get rid of bad ads. The tech giant has announced that it will introduce its own ad blocker to the Chrome browser next year to remove the most intrusive ads. It will also let websites remove ads for people who pay to go ad-free.</div>
-          <button class="btn btn-primary">ler mais</button>
-        </div>
-      </article>
-      <article class="card artigo">
-        <div class="card-block">
-          <h1>Sony sells one million VR headsets</h1>
-          <div>Sony has sold more than one million virtual reality (VR) headsets, the company has said.</div>
-          <button class="btn btn-primary">ler mais</button>
-        </div>
-      </article>
+    <section id="artigos" class="row">
+      <div class="col-md-6">
+        <div class="p-3"></div>
+        <article class="card artigo">
+          <div class="card-block">
+            <h2 class="card-title">Google blocker to eliminate bad ads and let users go ad-free</h2>
+            <p class="card-text">OK GOOGLE, get rid of bad ads. The tech giant has announced that it will introduce its own ad blocker to the Chrome browser next year to remove the most intrusive ads. It will also let websites remove ads for people who pay to go ad-free.</p>
+            <button class="btn btn-primary">ler mais</button>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-6">
+        <div class="p-3"></div>
+        <article class="card artigo">
+          <div class="card-block">
+            <h2 class="card-title">Sony sells one million VR headsets</h2>
+            <p class="card-text">Sony has sold more than one million virtual reality (VR) headsets, the company has said.</p>
+            <button class="btn btn-primary">ler mais</button>
+          </div>
+        </article>
+      </div>
     </section>
-</div>
+    <app-contato></app-contato>
+    </div>
+  </div>
 </div>

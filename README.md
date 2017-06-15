@@ -6,6 +6,8 @@ npm install -g @angular/cli
 npm install bootstrap@4.0.0-alpha.6 -save
 npm install jquery-slim -save
 npm install tether -save
+npm install -g @angular/cli@latest -save -dev
+npm install
 
 ##comandos##
 ng build --aot

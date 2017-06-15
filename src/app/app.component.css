@@ -13,8 +13,19 @@
 #menu-titulo h6{
     color: #B0C4B1;
 }
-@media(max-width: 767px){
-    #menu-titulo{
-        text-align: center
+@media(min-width: 767px){
+    .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .sidebar {
+        padding-left: 0;
+        padding-right: 0;
     }
 }

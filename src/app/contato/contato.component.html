@@ -1,0 +1,25 @@
+<section id="contato" class="row">
+  <div class="col-sm-12">
+    <div class="card">
+      <div class="card-block">
+        <h1 class="card-title">Contato</h1>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut est pulvinar, fermentum dui non, vestibulum magna. Suspendisse a justo vel lorem commodo mollis. Suspendisse dictum, lacus vel accumsan ultrices, orci sapien faucibus magna, sit amet tincidunt elit sem pretium mauris. Quisque semper, lectus vitae mattis rhoncus, arcu erat laoreet sem, et tincidunt tellus felis sit amet arcu. Vivamus dictum sodales condimentum. Aliquam lobortis sapien ut fringilla pretium. Ut quis augue sed dolor euismod malesuada in ullamcorper risus.</p>
+        <form [formGroup]="contatoForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <input type="text" class="form-control" formControlName="nome" required />
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" formControlName="e-mail" required />
+          </div>
+          <div class="form-group">
+            <textarea class="form-group"
+            formControlName="texto" rows="3"
+            placeholder="deixe um comentário"
+            required minlength="5" maxlength="100"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
