@@ -2,6 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.1.
 
+## Initial
 npm install -g @angular/cli
 
 npm install bootstrap@4.0.0-alpha.6 -save
@@ -14,15 +15,15 @@ npm install -g @angular/cli@latest -save -dev
 
 npm install
 
-##framework minimalista para web para confg server
+## Framework minimalista para web para confg server
 
 npm install express --save
 
-##converter conteudo submetido
+## Converter conteudo submetido
 
 npm install body-parser --save
 
-##comandos
+## Comandos
 
 ng build --aot
 
