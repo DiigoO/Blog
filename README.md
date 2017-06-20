@@ -14,21 +14,21 @@ npm install -g @angular/cli@latest -save -dev
 
 npm install
 
-##framework minimalista para web para confg server##
+##framework minimalista para web para confg server
 
 npm install express --save
 
-##converter conteudo submetido##
+##converter conteudo submetido
 
 npm install body-parser --save
 
-##comandos##
+##comandos
 
 ng build --aot
 
 ng serve -watch
 
-## Guias de Referencias ##
+## Guias de Referencias 
 http://caniuse.com/
 
 http://todomvc.com/
