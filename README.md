@@ -8,6 +8,10 @@ npm install jquery-slim -save
 npm install tether -save
 npm install -g @angular/cli@latest -save -dev
 npm install
+##framework minimalista para web para confg server##
+npm install express --save
+##converter conteudo submetido##
+npm install body-parser --save
 
 ##comandos##
 ng build --aot
