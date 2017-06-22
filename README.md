@@ -23,6 +23,10 @@ npm install express --save
 
 npm install body-parser --save
 
+## Instalar Jquery
+
+npm install --save -dev @types/query
+
 ## Comandos
 
 ng build --aot
@@ -33,6 +37,8 @@ ng serve -watch
 http://caniuse.com/
 
 http://todomvc.com/
+
+https://github.com/draptik/angulardemorestful
 
 
 ## Development server

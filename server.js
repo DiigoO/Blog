@@ -4,11 +4,6 @@ var path = require('path');
 
 app.use(express.static(path.join(__dirname, 'dist')));
 
-//mudar a rota padrap -> '*'
-app.get('*', function(req,res) {
-    res.status(404).send({error: 'API Not found'});
-});
-
 app.listen(process.env.PORT || 3000, function () {
     console.log('escutando na porta 3000');
 });
@@ -61,9 +56,25 @@ app.post('/api/contato', function (req, res) {
     });
 });
 
+app.get('/api/artigo/*', function(req, res){
+const artigosDbPath = dbFolder + '/artigos.json';
+    tryRead(artigosDbPath, function(artigos){
+
+    var artigo = artigos.filter((artigo) => {
+        return parseInt(artigo.id) == parseInt(req.params[0]);
+    })
+        res.status(200).json(artigos);
+    });
+});
+
 app.get('/api/artigos', function(req, res){
 const artigosDbPath = dbFolder + '/artigos.json';
     tryRead(artigosDbPath, function(artigos){
         res.status(200).json(artigos);
     });
+});
+
+//mudar a rota padrao -> '*'
+app.get('*', function(req,res) {
+    res.status(404).send({error: 'API Not found'});
 });

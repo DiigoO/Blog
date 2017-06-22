@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
   constructor(private http: Http, private zone :NgZone) { }
 
   ngOnInit(): void{
+    console.log("OnInit");
     this.http.get('api/artigos')
     .subscribe(artigos =>{
       this.zone.run( () => {
@@ -19,6 +20,7 @@ export class HomeComponent implements OnInit {
     });
   }
   resultadoArtigos(artigos){
+    console.log(artigos);
     this.artigos = JSON.parse(artigos._body);
   }
 }
