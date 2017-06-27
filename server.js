@@ -1,6 +1,17 @@
 const express = require('express');
 var app = express();
 var path = require('path');
+const wss = new WebSocket.Server({ port: 3000 });
+
+wss.on('connection', function connection(ws) {
+    ws.on('message', function incoming(message) {
+        wss.clients.forEach(function each(client) {
+            if (client.readyState === WebSocket.OPEN) {
+                client.send(message);
+            }
+        });
+    });
+});
 
 app.use(express.static(path.join(__dirname, 'dist')));
 

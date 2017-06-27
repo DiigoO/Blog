@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ContatoComponent } from './contato/contato.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpModule} from '@angular/http';
 import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
@@ -21,7 +21,7 @@ import { ChatComponent } from './chat/chat.component';
     ChatComponent
   ],
   imports: [
-    BrowserModule, ReactiveFormsModule, HttpModule, RouterModule.forRoot(routes)
+    BrowserModule, ReactiveFormsModule, HttpModule, RouterModule.forRoot(routes), FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
