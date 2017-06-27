@@ -29,3 +29,21 @@
         padding-right: 0;
     }
 }
+
+@import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah);
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+header{
+    animation: goDown 10s infinite;
+    position: relative;
+}
+
+@keyframes goDown {
+    0% { top: 0px;}
+    10%{ top: 20px;}
+    95%{ top: 20px;}
+    100%{ top: 0px;}
+}

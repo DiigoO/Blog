@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
 import { ArtigoComponent } from './artigo/artigo.component';
 import { routes } from './router';
+import { ChatComponent } from './chat/chat.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { routes } from './router';
     AppComponent,
     ContatoComponent,
     HomeComponent,
-    ArtigoComponent
+    ArtigoComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule, ReactiveFormsModule, HttpModule, RouterModule.forRoot(routes)

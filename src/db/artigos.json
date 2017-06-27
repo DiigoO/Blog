@@ -8,5 +8,10 @@
         "titulo":"How can IT manage emerging mobile technology?",
         "resumo":"IT admins can get overwhelmed or undermined when it comes to the emerging mobile technology arriving in businesses. To stay on top of trends, it's crucial to plan ahead.",
         "id":2
+    },
+    {
+        "titulo":"HTML 5 VIDEOS",
+        "resumo":"Com a tag nativa de vídeos você possui uma experiencia muito mais integrada",
+        "id":3
     }
 ]

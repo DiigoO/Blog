@@ -21,7 +21,7 @@ export class ArtigoComponent implements OnInit {
   ngOnInit() {
     this.activatedRoute.params.subscribe(params => {
       let id = params['id'];
-      this.html.get('api/artigo/'+id)
+      this.http.get('api/artigo/'+id)
       .subscribe(artigo => {
         this.zone.run(() => {
           this.resultadoArtigo(artigo);
@@ -33,7 +33,8 @@ export class ArtigoComponent implements OnInit {
   resultadoArtigo(artigo){
     console.log(artigo);
     this.artigo = JSON.parse(artigo._body);
-    this.html.get("assets/artigo"+ this.artigo.id +".html")
+    console.log(this.artigo);
+    this.http.get("assets/artigo"+ this.artigo.id +".html")
     .subscribe(file =>{
       this.zone.run(() => {
         this.resultadoHtmlArtigo(file);

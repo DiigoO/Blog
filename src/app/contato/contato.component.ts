@@ -5,6 +5,8 @@ import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms'
 import { Http, Response, RequestOptions, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
 
+import { EmailValidator } from '../util/emailValidator';
+
 @Component({
   selector: 'app-contato',
   templateUrl: './contato.component.html',

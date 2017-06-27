@@ -1,0 +1,10 @@
+<div class="form-group">
+  <h3>aqui você pode interagir com as pessoas que estão no site</h3>
+  <textarea [(ngModel)]="msg" class="form-control"></textarea>
+  <button (click)="sendMessage()" class="btn btn-primary">enviar</button>
+  {{status}}
+
+  <div class="list-group" *ngFor="let msg of msgsRecebidas;">
+    <div class="list-group-item">{{msg}}</div>
+  </div>
+</div>

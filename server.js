@@ -63,7 +63,7 @@ const artigosDbPath = dbFolder + '/artigos.json';
     var artigo = artigos.filter((artigo) => {
         return parseInt(artigo.id) == parseInt(req.params[0]);
     })
-        res.status(200).json(artigos);
+        res.status(200).json(artigo[0]);
     });
 });
 
@@ -76,5 +76,5 @@ const artigosDbPath = dbFolder + '/artigos.json';
 
 //mudar a rota padrao -> '*'
 app.get('*', function(req,res) {
-    res.status(404).send({error: 'API Not found'});
+    res.sendfile(path.join(__dirname, 'dist/index.html'));
 });

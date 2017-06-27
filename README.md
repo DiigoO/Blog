@@ -25,13 +25,18 @@ npm install body-parser --save
 
 ## Instalar Jquery
 
-npm install --save -dev @types/query
+npm install --save-dev @types/jquery
+
+## WebSockets onmessage
+npm install pm2 -g
 
 ## Comandos
 
 ng build --aot
 
-ng serve -watch
+ng serve --watch
+
+ng build --watch
 
 ## Guias de Referencias 
 http://caniuse.com/
@@ -40,6 +45,7 @@ http://todomvc.com/
 
 https://github.com/draptik/angulardemorestful
 
+http://www.webmfiles.org/demo-files/
 
 ## Development server
 
